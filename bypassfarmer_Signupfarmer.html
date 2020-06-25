@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Registraion Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+table{
+  font-family: Lucida Sans; 
+  color:black; 
+  font-size: 13pt; 
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 25px;
+  border-collapse: collapse; 
+  border: 2px 
+  ;
+}
+body {
+  background-color: #17202A;
+}
+#type{
+width: 20px;
+height: 100px;
+}
+.cap{
+color: white;
+}
+td{
+color: white;
+}
+.w3-input{
+border-radius:10px;
+height: 35px;
+width: 300px;
+}
+.place{
+width: 200px;
+color: white;
+height: 40px;
+ border-radius:10px;
+ border: 0;
+}
+
+</style>
+</head>
+<body background="wheat3.jpg">
+<form name="form" action="signfarmer.php" method="POST">
+
+<table  style="background-color:rgba(92, 191, 191, 0.6);" align="center"  width= "1000" cellpadding="10">
+<caption class="cap"><h1>Farmer Sign Up</h1></caption>
+<tr><td>Name</td>
+<td><input class="w3-input" type= "text" name="Firstname" id="Firstname"></td>
+<td>Password</td>
+<td><input class="w3-input" type= "text" name="Password" id="Password"></td>
+</tr>
+<td>Email Address</td>
+<td><input class="w3-input" type= "text" name="Email" id="Email"></td>
+
+<tr>
+</tr>
+<tr><td>Mobile Number</td>
+<td><input class="w3-input" type= "text" name="Mobile" id="Mobile"></td>
+</tr>
+
+
+<tr><td>Your Address</td>
+<td colspan= "3" ><input class="w3-input" type= "text" name="Yaddress" id="Yaddress"></td>
+</tr>
+
+
+<tr><td>City</td>  
+<td><input class="w3-input" type= "text" name="City" id="City " ></td>
+<td>State/Province</td>
+<td>
+<input class="w3-input" type= "text" name="State" id="State"></td>
+</tr>
+
+<tr><td>Zipcode</td>
+<td><input class="w3-input" type= "text" name="Zipcode" id="Zipcode " ></td>
+<td>Country</td>
+<td><select class="w3-input" name="country">
+<option value="India">Indian<option>
+<option value="Australia">Australia<option>
+<option value="America">America<option>
+</select></td>
+</tr>
+
+
+<tr><td colspan="2" align="center"><button  href="/">SignUp</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Registraion Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+table{
+  font-family: Lucida Sans; 
+  color:black; 
+  font-size: 13pt; 
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 25px;
+  border-collapse: collapse; 
+  border: 2px 
+  ;
+}
+body {
+  background-color: #17202A;
+}
+#type{
+width: 10px;
+height: 100px;
+}
+.cap{
+color: white;
+}
+td{
+
+color: white;
+}
+.w3-input{
+border-radius:10px;
+height: 35px;
+width: 300px;
+}
+.place{
+width: 200px;
+color: white;
+height: 40px;
+ border-radius:10px;
+ border: 0;
+}
+
+</style>
+</head>
+<body background="wheat3.jpg">
+<form name="form" method="post" id="id2" action="userhome.php">
+
+<table  style="background-color:rgba(92, 191, 191, 0.6);" align="center"  width= "500" height="300" cellpadding="10">
+<caption class="cap"><h1>Login User</h1></caption>
+<tr>
+<td>Email Address</td>
+<td><input class="w3-input" type= "text" name="Email" id="Email"></td>
+</tr>
+
+
+
+
+<tr><td>Password</td>
+<td colspan= "3" ><input class="w3-input" type= "text" name="pass" id="pass"></td>
+</tr>
+
+
+
+
+
+<tr><td colspan="1" align="center"><button onclick="location.href='userhome.html'" type="button" style="background-color:rgba(18, 14, 81, 0.6);" class="place" >login</button></td>
+<td colspan="1" ><button  type="submit" style="background-color:rgba(18, 14, 81, 0.6);" class="place" >SignUp</button></td></tr>
+</table>
+   <?php
+    //you should be checking whether the index 'q' actually exists in the $_GET arrray before attempting to use it. so for it use isset().
+        if(isset($_GET['q'])) {
+        if ($_GET['q'] == 1) {
+    echo "Login Failed!! Invalid Credentials!!";
+        } }
+    ?>
+<script >
+function validate(){
+if(document.form.username.value == ""){
+alert("Enter the Username");
+return false;
+}
+   if (!/^[a-zA-Z]*$/g.test(document.form.username.value)) {
+        alert("Please enter Alphabets");
+        document.form.usernamename.focus();
+        return false;
+}
+ var p1=form.Password.value;
+        var p2=form.Confirm.value;
+if(document.form.Password.value == ""){
+alert("Enter the Password");
+return false;
+}
+
+
+}
+
+
+</script>
+</body>
+</html>
